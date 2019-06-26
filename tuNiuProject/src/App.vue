@@ -4,9 +4,18 @@
 
 <template>
     <div class="app">
-        <h1>Hello Would</h1>
+        <Indextop></Indextop>
     </div>
 </template>
+
+<script>
+import Indextop from "./components/Indextop.vue";
+export default {
+    components:{
+        Indextop
+    }
+}
+</script>
 
 
 
