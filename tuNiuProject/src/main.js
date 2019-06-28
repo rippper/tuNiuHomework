@@ -4,6 +4,8 @@ import VueRouter from "vue-router";
 import Index from "./content/Index.vue";
 import Bbb from "./content/Bbb.vue";
 
+import HAT from "./content/HotelAndScenery.vue"
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -14,6 +16,10 @@ const routes = [
     {
         path:"/bbb",
         component:Bbb
+    },
+    {
+        path:"/hotel",
+        component:HAT
     }
 ]
 
