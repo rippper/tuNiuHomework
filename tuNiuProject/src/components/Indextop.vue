@@ -283,7 +283,7 @@
                     <li>
                         <a href="javascript:;">网站地图</a>
                         <div class="index_top_excepttwo">
-                            <dl>
+                            <dl class="clear">
                                 <dt>
                                     去旅游
                                 </dt>
