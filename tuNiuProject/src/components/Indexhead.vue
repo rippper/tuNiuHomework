@@ -196,6 +196,7 @@
     border-bottom:1px solid #efefef;
     border-right:1px solid #efefef;
     display:none;
+    z-index:13;
 }
 .head_search_list ul li{
     width:74px;
@@ -231,7 +232,7 @@
 .head_search_combination_center input:focus + .btn + .btn{
     display:none;
 }
-.btn{
+.head_search_combination_center .btn{
     padding:2px 5px;
     display:inline-block;
     width:24px;
@@ -242,17 +243,17 @@
     color:#999;
     border-radius: 12px;
 }
-.btn a{
+.head_search_combination_center .btn a{
     text-align: center;
     line-height: 20px;
 }
-.btn a:hover{
+.head_search_combination_center .btn a:hover{
     color:#f80;
 }
-.btn1{
+.head_search_combination_center .btn1{
     right:50px;
 }
-.btn2{
+.head_search_combination_center .btn2{
     right:10px;
 }
 .head_search_combination_right{
@@ -298,6 +299,8 @@
     position: absolute;
     top:67px;
     left:290px;
+    background:#fff;
+    z-index:14;
 }
 .head_heightsearch_content_title h4{
     color:#f80;
@@ -308,12 +311,23 @@
     font-family: "Hiragino Sans GB",Tahoma,arial,宋体,sans-serif;
     height:24px;
     line-height: 24px;
+    position: relative;
 }
 .head_heightsearch_content_title .iconfont{
     position: absolute;
-    top:0;
+    top:-4px;
     right:0;
+    font-size: 12px;
+    color:#000;
+    cursor: pointer;
 }
+.head_heightsearch_content_title .iconfont::before{
+    font-weight: 800;
+}
+.head_heightsearch_content_title .iconfont:hover::before{
+    color:#f80;
+}
+
 </style>
 
 <template>
@@ -385,6 +399,22 @@
                     基本条件
                     <i class="iconfont icon-chacha"></i>
                 </h4>
+                <div>
+                    <dl>
+                        <dt>关键字</dt>
+                        <dd><input type="text" placeholder="请输入目的地、主题或关键词"></dd>
+                        <dt>类型</dt>
+                        <dd>
+                            <div>
+                                <a href="javascript:;">不限</a>
+                            </div>
+                        </dd>
+                        <dt>行程天数</dt>
+                        <dd><input type="text"></dd>
+                        <dt>价格区间</dt>
+                        <dd><input type="text"></dd>
+                    </dl>
+                </div>
                 
             </div>
 

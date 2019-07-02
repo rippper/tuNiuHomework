@@ -5,7 +5,8 @@
 <template>
     <div class="app">
         <Indextop></Indextop>
-        <Indexhead></Indexhead>   
+        <Indexhead></Indexhead> 
+        <router-view></router-view>  
     </div>
 </template>
 

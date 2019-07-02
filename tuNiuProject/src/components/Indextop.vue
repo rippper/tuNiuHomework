@@ -141,14 +141,14 @@
         top:29px;
         right:-52px;
         display:none;
-        z-index:10;
+        z-index:15;
     }
     .index_top_weApp{
         position: absolute;
         top:29px;
         right:0px;
         display: none;
-        z-index:10;
+        z-index:15;
     }
     .index_top_exceptone{
         position: absolute;
@@ -159,7 +159,7 @@
         right:0;
         top:29px;
         display: none;
-        z-index:10;
+        z-index:15;
     }
     .index_top_exceptone a{
         display: block;
@@ -191,7 +191,7 @@
         border:1px solid #eee;
         border-top:0px;
         box-shadow: 2px 2px 2px #F7F7F7;
-        z-index:10;
+        z-index:15;
     }
     .index_top_excepttwo dt{
         float:left;
