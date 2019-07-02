@@ -288,7 +288,7 @@ li.dot-active {
         </div>
       </div>
     </div>
-    <div class="hotel-main">
+    <div class="hotel-main clear">
       <ul class="navi">
         <li>
           <h4>
