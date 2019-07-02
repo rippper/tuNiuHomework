@@ -10,16 +10,14 @@ Vue.use(VueRouter);
 
 const routes = [
     {
-        path:'/',
-        component:Index
+        path:'/', component:Index,
+        children:[
+            {path:'hotel', component:HAT}
+        ]
     },
     {
         path:"/bbb",
         component:Bbb
-    },
-    {
-        path:"/hotel",
-        component:HAT
     }
 ]
 
