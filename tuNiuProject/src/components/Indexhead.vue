@@ -3,6 +3,7 @@
     width:1190px;
     margin:0 auto;
     position: relative;
+    background:#fff;
 }
 .head_logo{
     float:left;
@@ -437,24 +438,34 @@
     margin:0 auto;
     box-shadow:0 2px 2px #eaeaea;
 }
-.head_showallbtn_center a{
+.head_showallbtn_box{
     position: absolute;
     top:-15px;
     left:0;
-    display:block;
     width:340px;
     height:22px;
     text-align:center;
-    font: 400 12px/20px "Microsoft YaHei";
     background:#fff;
+    cursor: pointer;
+}
+.head_showallbtn_center a{
+    font: 400 12px/20px "Microsoft YaHei";
     z-index: 10;
     color:#2e9700;
 }
-.head_showallbtn_center a:hover{
+.head_showallbtn_center:hover a{
     color: #f80;
 }
-.head_showallbtn_center a i::before{
+.head_showallbtn_center:hover i{
+    color: #f80;
+}
+.head_showallbtn_center i::before{
     font-size: 12px;
+}
+.head_showallbtn_center i{
+    position: relative;
+    display: inline-block;
+    color:#2e9700;
 }
 .head_moreinfor_condition{
     width:640px;
@@ -555,6 +566,8 @@
     top:77px;
     display: none;
     box-shadow: 0 1px 3px 1px #efefef;
+    background:#fff;
+    z-index: 10;
 }
 .head_rightpart_dark::before{
     content: "";
@@ -637,224 +650,228 @@
                 </div>
             </div>
         </div>
-        <div class="head_heightsearch">
-            <a href="javascript:;" @click="open">高级搜索</a>
-        </div>
-        <div class="head_heightsearch_content" ref="mainBox">
-            <div class="head_heightsearch_content_title">
-                <h4>
-                    基本条件
-                    <i class="iconfont icon-chacha" @click="close"></i>
-                </h4>
-                <div class="head_moreinfor">
-                    <dl class="clear">
-                        <dt>关键字</dt>
-                        <dd><input type="text" placeholder="请输入目的地、主题或关键词"></dd>
-                    </dl>
-                    <dl class="clear head_moreinfor_beselect">
-                        <dt>类型</dt>
-                        <dd>
-                            <div class="head_moreinfor_unlimited" @click="unlimited(0)">
-                                不限
-                            </div>
-                            <div class="head_formore_choise">
-                                <div class="clear" v-for="(item,index) in type" :key="index" @click="morechoise(0,index)">
-                                    <i class="before_words_bits"></i>
-                                    <span v-text="item"></span>
-                                </div>
-                            </div>
-                            <div class="head_moreinfor_more clear" @click="allmsg(0,0)">
-                                <span>更多</span>
-                                <i class="iconfont icon-xiangshang"></i>
-                            </div>
-                        </dd>
-                    </dl>
-                    <dl class="clear head_moreinfor_beselect">
-                        <dt>行程天数</dt>
-                        <dd>
-                            <div class="head_moreinfor_unlimited" @click="unlimited(1)">
-                                不限
-                            </div>
-                            <div class="head_formore_choise">
-                                <div class="clear" v-for="(item,index) in day" :key="index" @click="morechoise(1,index)">
-                                    <i class="before_words_bits"></i>
-                                    <span v-text="item"></span>
-                                </div>
-                            </div>
-                            <div class="head_moreinfor_more clear" @click="allmsg(1,1)">
-                                <span>更多</span>
-                                <i class="iconfont icon-xiangshang"></i>
-                            </div>
-                        </dd>
-                    </dl>
-                    <dl class="clear">
-                        <dt>价格区间</dt>
-                        <dd>
-                            <span>
-                                <span>￥</span>
-                                <input type="text">
-                            </span>
-                            <span>-</span>
-                            <span>
-                                <span>￥</span>
-                                <input type="text">
-                            </span>
-                        </dd>
-                    </dl>
-                    <div class="head_moreinfor_condition" ref="condition">
-                        <h4 class="head_moreinfor_moreinfor">
-                        更多条件
-                        </h4>
+        <div class="head_out_control" v-click-outside="onClickOutside">
+            <div class="head_heightsearch">
+                <a href="javascript:;" @click="open">高级搜索</a>
+            </div>
+            <div class="head_heightsearch_content" ref="mainBox">
+                <div class="head_heightsearch_content_title">
+                    <h4>
+                        基本条件
+                        <i class="iconfont icon-chacha" @click="close"></i>
+                    </h4>
+                    <div class="head_moreinfor">
+                        <dl class="clear">
+                            <dt>关键字</dt>
+                            <dd><input type="text" placeholder="请输入目的地、主题或关键词"></dd>
+                        </dl>
                         <dl class="clear head_moreinfor_beselect">
-                            <dt>交通类型</dt>
+                            <dt>类型</dt>
                             <dd>
-                                <div class="head_moreinfor_unlimited" @click="unlimited(2)">
+                                <div class="head_moreinfor_unlimited" @click="unlimited(0)">
                                     不限
                                 </div>
                                 <div class="head_formore_choise">
-                                    <div class="clear" v-for="(item,index) in transition" :key="index" @click="morechoise(2,index)">
+                                    <div class="clear" v-for="(item,index) in type" :key="index" @click="morechoise(0,index)">
                                         <i class="before_words_bits"></i>
                                         <span v-text="item"></span>
                                     </div>
                                 </div>
-                                <div class="head_moreinfor_more clear" @click="allmsg(2,2)">
+                                <div class="head_moreinfor_more clear" @click="allmsg(0,0)">
                                     <span>更多</span>
                                     <i class="iconfont icon-xiangshang"></i>
                                 </div>
                             </dd>
                         </dl>
                         <dl class="clear head_moreinfor_beselect">
-                            <dt>产品特色</dt>
+                            <dt>行程天数</dt>
                             <dd>
-                                <div class="head_moreinfor_unlimited" @click="unlimited(3)">
+                                <div class="head_moreinfor_unlimited" @click="unlimited(1)">
                                     不限
                                 </div>
                                 <div class="head_formore_choise">
-                                    <div class="clear" v-for="(item,index) in feature" :key="index" @click="morechoise(3,index)">
+                                    <div class="clear" v-for="(item,index) in day" :key="index" @click="morechoise(1,index)">
                                         <i class="before_words_bits"></i>
                                         <span v-text="item"></span>
                                     </div>
                                 </div>
-                                <div class="head_moreinfor_more clear" @click="allmsg(3,3)">
+                                <div class="head_moreinfor_more clear" @click="allmsg(1,1)">
                                     <span>更多</span>
                                     <i class="iconfont icon-xiangshang"></i>
                                 </div>
                             </dd>
                         </dl>
-                        <dl class="clear head_moreinfor_beselect">
-                            <dt>组团特色</dt>
+                        <dl class="clear">
+                            <dt>价格区间</dt>
                             <dd>
-                                <div class="head_moreinfor_unlimited" @click="unlimited(4)">
-                                    不限
-                                </div>
-                                <div class="head_formore_choise">
-                                    <div class="clear" v-for="(item,index) in featureGroup" :key="index" @click="morechoise(4,index)">
-                                        <i class="before_words_bits"></i>
-                                        <span v-text="item"></span>
-                                    </div>
-                                </div>
+                                <span>
+                                    <span>￥</span>
+                                    <input type="text">
+                                </span>
+                                <span>-</span>
+                                <span>
+                                    <span>￥</span>
+                                    <input type="text">
+                                </span>
                             </dd>
                         </dl>
-                        <dl class="clear head_moreinfor_beselect">
-                            <dt>线路玩法</dt>
-                            <dd>
-                                <div class="head_moreinfor_unlimited" @click="unlimited(5)">
-                                    不限
-                                </div>
-                                <div class="head_formore_choise">
-                                    <div class="clear" v-for="(item,index) in playLine" :key="index" @click="morechoise(5,index)">
-                                        <i class="before_words_bits"></i>
-                                        <span v-text="item"></span>
+                        <div class="head_moreinfor_condition" ref="condition">
+                            <h4 class="head_moreinfor_moreinfor">
+                            更多条件
+                            </h4>
+                            <dl class="clear head_moreinfor_beselect">
+                                <dt>交通类型</dt>
+                                <dd>
+                                    <div class="head_moreinfor_unlimited" @click="unlimited(2)">
+                                        不限
                                     </div>
-                                </div>
-                                <div class="head_moreinfor_more clear" @click="allmsg(5,4)">
-                                    <span>更多</span>
-                                    <i class="iconfont icon-xiangshang"></i>
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl class="clear head_moreinfor_beselect">
-                            <dt>住宿类型</dt>
-                            <dd>
-                                <div class="head_moreinfor_unlimited" @click="unlimited(6)">
-                                    不限
-                                </div>
-                                <div class="head_formore_choise">
-                                    <div class="clear" v-for="(item,index) in livePlace" :key="index" @click="morechoise(6,index)">
-                                        <i class="before_words_bits"></i>
-                                        <span v-text="item"></span>
+                                    <div class="head_formore_choise">
+                                        <div class="clear" v-for="(item,index) in transition" :key="index" @click="morechoise(2,index)">
+                                            <i class="before_words_bits"></i>
+                                            <span v-text="item"></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="head_moreinfor_more clear" @click="allmsg(6,5)">
-                                    <span>更多</span>
-                                    <i class="iconfont icon-xiangshang"></i>
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl class="clear head_moreinfor_beselect">
-                            <dt>酒店位置</dt>
-                            <dd>
-                                <div class="head_moreinfor_unlimited" @click="unlimited(7)">
-                                    不限
-                                </div>
-                                <div class="head_formore_choise">
-                                    <div class="clear" v-for="(item,index) in hotelLocal" :key="index" @click="morechoise(7,index)">
-                                        <i class="before_words_bits"></i>
-                                        <span v-text="item"></span>
+                                    <div class="head_moreinfor_more clear" @click="allmsg(2,2)">
+                                        <span>更多</span>
+                                        <i class="iconfont icon-xiangshang"></i>
                                     </div>
-                                </div>
-                                <div class="head_moreinfor_more clear" @click="allmsg(7,6)">
-                                    <span>更多</span>
-                                    <i class="iconfont icon-xiangshang"></i>
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl class="clear head_moreinfor_beselect">
-                            <dt>酒店品牌</dt>
-                            <dd>
-                                <div class="head_moreinfor_unlimited" @click="unlimited(8)">
-                                    不限
-                                </div>
-                                <div class="head_formore_choise">
-                                    <div class="clear" v-for="(item,index) in hotelBrand" :key="index" @click="morechoise(8,index)">
-                                        <i class="before_words_bits"></i>
-                                        <span v-text="item"></span>
+                                </dd>
+                            </dl>
+                            <dl class="clear head_moreinfor_beselect">
+                                <dt>产品特色</dt>
+                                <dd>
+                                    <div class="head_moreinfor_unlimited" @click="unlimited(3)">
+                                        不限
                                     </div>
-                                </div>
-                                <div class="head_moreinfor_more clear" @click="allmsg(8,7)">
-                                    <span>更多</span>
-                                    <i class="iconfont icon-xiangshang"></i>
-                                </div>
-                            </dd>
-                        </dl>
-                        <dl class="clear head_moreinfor_beselect">
-                            <dt>含餐</dt>
-                            <dd>
-                                <div class="head_moreinfor_unlimited" @click="unlimited(9)">
-                                    不限
-                                </div>
-                                <div class="head_formore_choise">
-                                    <div class="clear" v-for="(item,index) in eat" :key="index" @click="morechoise(9,index)">
-                                        <i class="before_words_bits"></i>
-                                        <span v-text="item"></span>
+                                    <div class="head_formore_choise">
+                                        <div class="clear" v-for="(item,index) in feature" :key="index" @click="morechoise(3,index)">
+                                            <i class="before_words_bits"></i>
+                                            <span v-text="item"></span>
+                                        </div>
                                     </div>
-                                </div>
-                            </dd>
-                        </dl>
+                                    <div class="head_moreinfor_more clear" @click="allmsg(3,3)">
+                                        <span>更多</span>
+                                        <i class="iconfont icon-xiangshang"></i>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="clear head_moreinfor_beselect">
+                                <dt>组团特色</dt>
+                                <dd>
+                                    <div class="head_moreinfor_unlimited" @click="unlimited(4)">
+                                        不限
+                                    </div>
+                                    <div class="head_formore_choise">
+                                        <div class="clear" v-for="(item,index) in featureGroup" :key="index" @click="morechoise(4,index)">
+                                            <i class="before_words_bits"></i>
+                                            <span v-text="item"></span>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="clear head_moreinfor_beselect">
+                                <dt>线路玩法</dt>
+                                <dd>
+                                    <div class="head_moreinfor_unlimited" @click="unlimited(5)">
+                                        不限
+                                    </div>
+                                    <div class="head_formore_choise">
+                                        <div class="clear" v-for="(item,index) in playLine" :key="index" @click="morechoise(5,index)">
+                                            <i class="before_words_bits"></i>
+                                            <span v-text="item"></span>
+                                        </div>
+                                    </div>
+                                    <div class="head_moreinfor_more clear" @click="allmsg(5,4)">
+                                        <span>更多</span>
+                                        <i class="iconfont icon-xiangshang"></i>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="clear head_moreinfor_beselect">
+                                <dt>住宿类型</dt>
+                                <dd>
+                                    <div class="head_moreinfor_unlimited" @click="unlimited(6)">
+                                        不限
+                                    </div>
+                                    <div class="head_formore_choise">
+                                        <div class="clear" v-for="(item,index) in livePlace" :key="index" @click="morechoise(6,index)">
+                                            <i class="before_words_bits"></i>
+                                            <span v-text="item"></span>
+                                        </div>
+                                    </div>
+                                    <div class="head_moreinfor_more clear" @click="allmsg(6,5)">
+                                        <span>更多</span>
+                                        <i class="iconfont icon-xiangshang"></i>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="clear head_moreinfor_beselect">
+                                <dt>酒店位置</dt>
+                                <dd>
+                                    <div class="head_moreinfor_unlimited" @click="unlimited(7)">
+                                        不限
+                                    </div>
+                                    <div class="head_formore_choise">
+                                        <div class="clear" v-for="(item,index) in hotelLocal" :key="index" @click="morechoise(7,index)">
+                                            <i class="before_words_bits"></i>
+                                            <span v-text="item"></span>
+                                        </div>
+                                    </div>
+                                    <div class="head_moreinfor_more clear" @click="allmsg(7,6)">
+                                        <span>更多</span>
+                                        <i class="iconfont icon-xiangshang"></i>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="clear head_moreinfor_beselect">
+                                <dt>酒店品牌</dt>
+                                <dd>
+                                    <div class="head_moreinfor_unlimited" @click="unlimited(8)">
+                                        不限
+                                    </div>
+                                    <div class="head_formore_choise">
+                                        <div class="clear" v-for="(item,index) in hotelBrand" :key="index" @click="morechoise(8,index)">
+                                            <i class="before_words_bits"></i>
+                                            <span v-text="item"></span>
+                                        </div>
+                                    </div>
+                                    <div class="head_moreinfor_more clear" @click="allmsg(8,7)">
+                                        <span>更多</span>
+                                        <i class="iconfont icon-xiangshang"></i>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="clear head_moreinfor_beselect">
+                                <dt>含餐</dt>
+                                <dd>
+                                    <div class="head_moreinfor_unlimited" @click="unlimited(9)">
+                                        不限
+                                    </div>
+                                    <div class="head_formore_choise">
+                                        <div class="clear" v-for="(item,index) in eat" :key="index" @click="morechoise(9,index)">
+                                            <i class="before_words_bits"></i>
+                                            <span v-text="item"></span>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="head_showallbtn">
+                        <div class="head_showallbtn_center">
+                            <div class="head_showallbtn_box clear" @click="zoom" >
+                                <a href="javascript:;" ref="moreClick">
+                                    更多条件(交通类型、住宿类型、组团特色、产品特色)
+                                </a>
+                                <i class="iconfont icon-down" id="superbit" ref="upDown"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head_search_btnpart">
+                        <input class="head_search_btnpart_btn" type="button" value="搜索">
+                        <a href="javascript:;" @click="clearall">清空搜索条件</a>
                     </div>
                 </div>
-                <div class="head_showallbtn">
-                    <div class="head_showallbtn_center">
-                        <a href="javascript:;" @click="zoom" ref="moreClick">
-                            更多条件(交通类型、住宿类型、组团特色、产品特色)
-                            <i class="iconfont icon-down" ref="upDown"></i>
-                        </a>
-                    </div>
-                </div>
-                 <div class="head_search_btnpart">
-                    <input class="head_search_btnpart_btn" type="button" value="搜索">
-                    <a href="javascript:;" @click="clearall">清空搜索条件</a>
-                 </div>
             </div>
         </div>
         <div class="head_rightpart clear">
@@ -1015,6 +1032,7 @@ export default {
             let attr = ex.height;
             let timer = null;
             let that = this;
+            let bug = document.getElementById("superbit");
             if(that.boxHeight == "0px"){
                 that.boxHeight = attr;
                 timer = setInterval(()=>{
@@ -1027,8 +1045,8 @@ export default {
                         that.$refs.condition.style["height"] = parseInt(attr) - speed + 'px';
                     }
                 },10);
-                that.$refs.moreClick.innerHTML = "更多条件(交通类型、住宿类型、组团特色、产品特色) "+ '<i class="iconfont icon-down" ref="upDown"></i>'
-                let upDown = that.$refs.upDown; 
+                that.$refs.moreClick.innerText = "更多条件(交通类型、住宿类型、组团特色、产品特色) "
+                bug.style = "";
             }else{
                 timer = setInterval(()=>{
                     let attr = that.boxHeight;
@@ -1043,7 +1061,8 @@ export default {
                         that.$refs.condition.style["height"] = parseInt(change) + speed + 'px';
                     }
                 },15);
-                that.$refs.moreClick.innerHTML = "收起更多 "+'<i class="iconfont icon-xiangshang" ref="upDown"></i>'
+                that.$refs.moreClick.innerText = "收起更多 " 
+                bug.style.cssText = "transform:rotate(180deg);top:3px;"
             }
         },
         clearall(){
@@ -1064,6 +1083,9 @@ export default {
             })
         },
         close(){
+            this.$refs.mainBox.style.display = "none";
+        },
+        onClickOutside(){
             this.$refs.mainBox.style.display = "none";
         },
         open(){

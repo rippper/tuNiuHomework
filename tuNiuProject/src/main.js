@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import vClickOutside from 'v-click-outside';
 import VueRouter from "vue-router";
 import Index from "./content/Index.vue";
 import Bbb from "./content/Bbb.vue";
@@ -7,6 +8,7 @@ import Bbb from "./content/Bbb.vue";
 import HAT from "./content/HotelAndScenery.vue"
 
 Vue.use(VueRouter);
+Vue.use(vClickOutside);
 
 const routes = [
     {
