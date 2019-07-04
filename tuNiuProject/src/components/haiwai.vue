@@ -67,7 +67,7 @@
   </div>
 </template>
 <script>
-import css from "../css/app.css";
+import css from "../css/app-j.css";
 export default {
   data: function() {
     return {

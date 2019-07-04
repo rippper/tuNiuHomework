@@ -9,6 +9,8 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: auto 100%;
+        margin-bottom: 110px;
+            width: 100%;
     
 }
 .choosecar{

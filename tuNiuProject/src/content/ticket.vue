@@ -5,7 +5,6 @@
         <haiwai></haiwai>
         <hezuo></hezuo>
         <ticketbottom></ticketbottom>
-
     </div>
 </template>
 <script>

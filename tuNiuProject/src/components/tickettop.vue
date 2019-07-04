@@ -1,12 +1,4 @@
 <style>
-body {
-  width: 1190px;
-  margin: 0 auto;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
 .banner {
   width: 1190px;
   height: 428px;
@@ -254,7 +246,7 @@ div.bai:hover {
 
 </template>
 <script>
-import css from "../css/app.css";
+import css from "../css/app-j.css";
 import mudi from "./mudi.vue";
 export default {
   data: function() {
