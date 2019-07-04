@@ -71,8 +71,6 @@
   margin: 20px 20px 0 0;
   box-shadow: 0 0 5px #eeeeee;
 }
-.hotel-item-bottom {
-}
 .hotel-price {
   float: left;
   color: #f80;
