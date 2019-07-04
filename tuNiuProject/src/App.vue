@@ -4,6 +4,7 @@
     }
     body{
         font-size: 12px;
+        height:5000px;
     }
     .clear::after{
         content:"";
@@ -21,10 +22,7 @@
 
 <template>
     <div class="app">
-        
         <router-view></router-view>
-
-
     </div>
 </template>
 

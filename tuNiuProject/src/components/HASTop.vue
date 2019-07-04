@@ -255,7 +255,7 @@ li.dot-active {
 </style>
 
 <template>
-  <div class="hotel-top">
+  <div class="hotel-top clear">
     <div class="hotel-head clear">
       <img
         class="drive-tour"

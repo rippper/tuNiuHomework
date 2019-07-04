@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
+import vClickOutside from 'v-click-outside';
 import VueRouter from "vue-router";
 import Index from "./content/Index.vue";
 import Bbb from "./content/Bbb.vue";
@@ -9,26 +10,21 @@ import LocalPlay from "./content/LocalPlay.vue";
 import WiFi from "./content/Wifi.vue"
 
 Vue.use(VueRouter);
+Vue.use(vClickOutside);
 
 const routes = [
-    // {
-    //     path:'/', component:Index,
-    //     // children:[
-    //     //     {path:'hotel', component:HAT},
-    //     //     {path:'play', component:LocalPlay}
-    //     // ]
-    // },
     {
-        path:'/play', 
-        component:LocalPlay
+        path: '/', component: Index,
+        children: [
+            { path: 'hotel', component: HAT },
+            { path: 'play', component: LocalPlay },
+            { path: 'wifi',component: WiFi},
+        ]
     },
+
     {
-        path:'/wifi', 
-        component:WiFi
-    },
-    {
-        path:"/bbb",
-        component:Bbb
+        path: "/bbb",
+        component: Bbb
     }
 ]
 
@@ -37,8 +33,8 @@ const router = new VueRouter({
 })
 
 new Vue({
-    el:'#app',
-    render:function(CreateElement){
+    el: '#app',
+    render: function (CreateElement) {
         return CreateElement(App)
     },
     router
