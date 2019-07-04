@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import vClickOutside from 'v-click-outside';
 import VueRouter from "vue-router";
+import Common from "./content/Common.vue";
 import Index from "./content/Index.vue";
 import Bbb from "./content/Bbb.vue";
 
@@ -14,8 +15,12 @@ Vue.use(vClickOutside);
 
 const routes = [
     {
-        path: '/', component: Index,
+        path: '/', redirect:"/common/index",
+    },
+    {
+        path: '/common', component: Common,
         children: [
+            { path: 'index', component: Index},
             { path: 'hotel', component: HAT },
             { path: 'play', component: LocalPlay },
             { path: 'wifi',component: WiFi},
