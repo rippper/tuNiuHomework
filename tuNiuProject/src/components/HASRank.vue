@@ -9,6 +9,7 @@
 .hotel-rank-bottom {
   border-top: 2px solid #666666;
   background: #f4f4f4;
+  padding-bottom: 20px;
 }
 .hotel-rank-price {
   color: #f80;

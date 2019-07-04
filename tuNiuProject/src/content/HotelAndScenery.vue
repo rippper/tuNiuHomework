@@ -1,7 +1,7 @@
 <style>
     .hotel-main{
         width: 1190px;
-        margin: 0 auto;
+        margin: 0 auto 20px;
     }
 </style>
 

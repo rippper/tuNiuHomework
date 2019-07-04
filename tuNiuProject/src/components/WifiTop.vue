@@ -56,7 +56,7 @@
   margin-left: 15px;
   position: relative;
   top: 2px;
-  background: url(http://img2.tuniucdn.com/u/tongxin/pc_new/flow.png) no-repeat;
+  background: url("../img/flow.png") no-repeat;
   height: 10px;
   width: 5px;
   background-position: 0 0;
@@ -78,7 +78,7 @@
   margin-left: 15px;
   position: relative;
   top: 2px;
-  background: url(http://img2.tuniucdn.com/u/tongxin/pc_new/flow.png) no-repeat;
+  background: url("../img/flow.png") no-repeat;
   height: 10px;
   width: 5px;
   background-position: 0 0;
@@ -100,7 +100,7 @@
   margin-left: 15px;
   position: relative;
   top: 2px;
-  background: url(http://img2.tuniucdn.com/u/tongxin/pc_new/flow.png) no-repeat;
+  background: url("../img/flow.png") no-repeat;
   height: 10px;
   width: 5px;
   background-position: 0 0;
@@ -122,10 +122,11 @@
   height: 360px;
 }
 .wifi-slideshow {
+  margin: 0 auto;
   position: relative;
   height: 360px;
 }
-.wifi-slideshow img {
+.wifi-slideshow div {
   position: absolute;
   top: 0;
   left: 0;
@@ -133,6 +134,8 @@
   bottom: 0;
   margin: auto;
   transition: all 1s;
+  width: 100%;
+  height: 100%;
 }
 .wifi-choose {
   position: absolute;
@@ -384,13 +387,14 @@ i.icon-youjiantou {
 
     <div class="wifi-top-main clear">
       <div class="wifi-slideshow">
-        <img
-          :src="item.src"
+        <div
+          
           alt
           v-for="(item, index) in imgList"
           :key="index"
-          :style="{opacity:item.opacity}"
-        />
+          :style="{opacity:item.opacity,background:item.src}"
+        ></div>
+
         <ul class="wifi-choose">
           <li
             :class="[index<=0 ? 'wifi-on' : '']"
@@ -706,27 +710,27 @@ export default {
 
       imgList: [
         {
-          src: "../src/img/Cii-VVzrTH-IdkZhAAFIOxwJQr8AAGWVwHRbv4AAUhT582.png",
+          src: "url(../src/img/Cii-VVzrTH-IdkZhAAFIOxwJQr8AAGWVwHRbv4AAUhT582.png) center center",
           content: "夏日劲惠",
           opacity: "1"
         },
         {
-          src: "../src/img/Cii_J1yLBCSIPyEpAAIRLaStbK4AAEg3AIoJSoAAhFF88.jpg",
+          src: "url(../src/img/Cii_J1yLBCSIPyEpAAIRLaStbK4AAEg3AIoJSoAAhFF88.jpg) center center",
           content: "首日一元",
           opacity: "0"
         },
         {
-          src: "../src/img//Cii_J1yLBCOIOQEdAAbb4fek19gAAEg3AIddQYABtv585.jpg",
+          src: "url(../src/img//Cii_J1yLBCOIOQEdAAbb4fek19gAAEg3AIddQYABtv585.jpg) center center",
           content: "美国WIFI",
           opacity: "0"
         },
         {
-          src: "../src/img/Cii-VVyLBCOINhDSAAPUE2HpF9EAAEg3AIkUP8AA9Qr09.jpg",
+          src: "url(../src/img/Cii-VVyLBCOINhDSAAPUE2HpF9EAAEg3AIkUP8AA9Qr09.jpg) center center",
           content: "欧洲WIFI",
           opacity: "0"
         },
         {
-          src: "../src/img/Cii-T1fskdOIZDbzAAFIHJ1rnP0AAC3sQKpELoAAUg002.jpg",
+          src: "url(../src/img/Cii-T1fskdOIZDbzAAFIHJ1rnP0AAC3sQKpELoAAUg002.jpg) center center",
           content: "日本WIFI",
           opacity: "0"
         },
@@ -749,7 +753,7 @@ export default {
       }
       let imgList = document
         .getElementsByClassName("wifi-slideshow")[0]
-        .getElementsByTagName("img");
+        .getElementsByTagName("div");
 
       for (let i = 0; i < imgList.length; i++) {
         imgList[i].style.opacity = "0";
