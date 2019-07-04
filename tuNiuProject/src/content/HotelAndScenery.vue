@@ -9,12 +9,15 @@
     <div class="hotel-main">
         <HASTop></HASTop>
         <HASMain></HASMain>
+        <HASRank></HASRank>
     </div>
 </template>
 
 <script>
 import HASTop from "../components/HASTop.vue";
 import HASMain from "../components/HASMain.vue";
+import HASRank from "../components/HASRank.vue";
+
 
 export default {
     data () {
@@ -24,7 +27,8 @@ export default {
     },
     components:{
         HASTop,
-        HASMain
+        HASMain,
+        HASRank
     }
 }
 </script>

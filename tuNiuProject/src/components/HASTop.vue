@@ -33,7 +33,7 @@
   top: 12px;
 }
 .gticon {
-  background: url(http://img2.tuniucdn.com/img/20150302/gentuancms/gticon.png)
+  background: url("../img/gticon.png")
     no-repeat;
 }
 .tip {
@@ -288,7 +288,7 @@ li.dot-active {
         </div>
       </div>
     </div>
-    <div class="hotel-main">
+    <div class="hotel-main clear">
       <ul class="navi">
         <li>
           <h4>

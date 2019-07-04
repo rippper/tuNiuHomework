@@ -249,7 +249,7 @@
                 </li>
                 <li>
                     <div class="index_nav_bind_hotel"><img src="../img/bindzijiaz.png" alt=""></div>
-                    <a href="javascript:;">酒+景</a>
+                    <router-link to="/hotel">酒+景</router-link>
                 </li>
                 <li class="index_nav_ps" @mouseenter="mouseinn(3)" @mouseleave="mouseoutt(3)">
                     <a href="javascript:;">机票</a>
@@ -292,8 +292,8 @@
                     <a href="javascript:;">出游服务</a>
                     <div class="head_nav_soncenter head_nav_service">
                         <a href="javascirpt:;">签证</a>
-                        <a href="javascript:;">当地玩乐</a>
-                        <a href="javascript:;">全球WiFi</a>
+                        <router-link to="/play">当地玩乐</router-link>
+                        <router-link to="/wifi">全球WiFi</router-link>
                         <a href="javascript:;">租车用车</a>
                         <a href="javascript:;">婚纱旅拍</a>
                         <a href="javascript:;">全球购</a>
