@@ -617,6 +617,8 @@ export default {
                     bannerTo(index,yindex);
                 })
             });
+
+            
         })
     }
 }

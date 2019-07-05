@@ -218,13 +218,13 @@
                 <li class="index_nav_ps" @mouseenter="mouseinn(0)" @mouseleave="mouseoutt(0)">
                     <a href="javascript:;">跟团游</a>
                     <div class="head_nav_soncenter head_nav_group">
-                        <a href="javascirpt:;">出境·港澳台跟团</a>
-                        <a href="javascript:;">境内跟团</a>
-                        <a href="javascript:;">周边跟团</a>
+                        <router-link to="/common/gta">出境·港澳台跟团</router-link>
+                        <router-link to="/common/guonei">境内跟团</router-link>
+                        <router-link to="/common/zhoubian">周边跟团</router-link>
                         <a href="javascript:;">牛人专线</a>
-                        <a href="javascript:;">目的地参团</a>
+                        <router-link to="/common/mudi">目的地参团</router-link>
                         <a href="javascript:;">跟团自驾</a>
-                        <a href="javascript:;">半自动</a>
+                        <router-link to="/common/banzizhu">半自助</router-link>
                     </div>
                 </li>
                 <li class="index_nav_ps" @mouseenter="mouseinn(1)" @mouseleave="mouseoutt(1)">
@@ -275,10 +275,10 @@
                 </li>
                 <li><a href="javascript:;">火车票</a></li>
                 <li><a href="javascript:;">汽车票</a></li>
-                <li><a href="javascript:;">用车</a></li>
+                <li><router-link to="/common/usercar"><a  style="color:white">用车</a></router-link></li>
                 <li>
                     <div class="index_nav_bind_ticket"><img src="../img/bindDisneyz.png" alt=""></div>
-                    <a href="javascript:;">门票</a>
+                    <router-link to="/common/ticket">门票</router-link>
                 </li>
                 <li><a href="javascript:;">特卖</a></li>
                 <li class="index_nav_ps" @mouseenter="mouseinn(5)" @mouseleave="mouseoutt(5)">
@@ -310,9 +310,9 @@
                 <li class="index_nav_ps" @mouseenter="mouseinn(7)" @mouseleave="mouseoutt(7)">
                     <a href="javascript:;">定制游</a>
                     <div class="head_nav_soncenter head_nav_booking">
-                        <a href="javascirpt:;">公司定制</a>
+                        <router-link to="/common/dingzhi">公司定制</router-link>
                         <a href="javascript:;">家庭定制</a>
-                        <a href="javascript:;">会议&奖励旅游</a>
+                        <router-link to="/common/memgift">会议&奖励旅游</router-link>
                         <a href="javascript:;">朋派定制游</a>
                     </div>
                 </li>
@@ -325,7 +325,7 @@
                         <a href="javascript:;">分期·借钱</a>
                         <a href="javascript:;">出境金融</a>
                         <a href="javascript:;">保险</a>
-                        <a href="javascript:;">礼品卡</a>
+                        <router-link to="/common/giftcard">礼品卡</router-link>
                     </div>
                 </li>
                 <li class="index_nav_ps" @mouseenter="mouseinn(9)" @mouseleave="mouseoutt(9)">
