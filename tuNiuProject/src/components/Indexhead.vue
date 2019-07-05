@@ -25,7 +25,7 @@
     top:28px;
     right:14px;
     border:1px solid #fff;
-    z-index:9;
+    z-index:12;
 }
 .head_logo_address_bit:hover{
     background:#fff;
@@ -593,7 +593,7 @@
 <template>
     <div class="head clear">
         <div class="head_logo">
-            <a class="head_logo_logoadd" href="javascript:;"></a>
+            <a class="head_logo_logoadd" href="http://www.tuniu.com/" target="_blank" ></a>
             <div class="head_logo_address_bit">
                 <a href="javascript:;">杭州站</a>
                 <div class="head_logo_cityselect">

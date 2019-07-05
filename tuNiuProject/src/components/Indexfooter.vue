@@ -1,4 +1,8 @@
 <style>
+.index_footer{
+    width:100%;
+    min-width:1190px;
+}
 .index_footer_firstfloor{
     background: #f5f5f5;
     padding: 20px 0 20px 0;
@@ -113,6 +117,41 @@
 }
 .index_footers_red_word{
     color:red;
+}
+.index_footer_later_bottomtwo{
+    width:571px;
+    margin:10px auto 0;
+}
+.index_footer_later_bottomtwo ul li {
+    float:left;
+    border: 1px solid #d8d8d8;
+    margin-right:10px; 
+    vertical-align: middle;
+    height:38px;
+}
+.index_footer_later_bottom {
+    margin-top:10px;
+}
+.index_footer_later_bottom div a img{
+    height:41px;
+}
+.index_footer_sixthfloor{
+    width:990px;
+    margin:10px auto 0;
+}
+.index_footer_sixthfloor dl{
+    padding-bottom:8px;
+}
+.index_footer_sixthfloor dl dt{
+    float:left;
+    color:#999;
+}
+.index_footer_sixthfloor dl dd{
+    width:912px;
+    float:left;
+}
+.index_footer_sixthfloor a{
+    color:#999;
 }
 </style>
 
@@ -267,35 +306,61 @@
                     |
                     <a href="javascript:;">杭州旅游网</a>
                 </p>
-                <div>
-                    <ul>
+                <div class="index_footer_later_bottomtwo clear">
+                    <ul class="clear">
+                        <li><img src="../img/footer_1.jpg" alt=""></li>
                         <li><img src="../img/followgroup.png" alt=""></li>
-                        <li><img src="../img/followgroup.png" alt=""></li>
-                        <li><img src="../img/followgroup.png" alt=""></li>
+                        <li><img src="../img/bottom.jpg" alt=""></li>
                     </ul>
                 </div>
-                <div>
-                    <ul>
+                <div class="index_footer_later_bottom">
+                    <div>
                         <a href="javascript:;"><img src="../img/chengxinOne.png" alt=""></a>
-                        <a href="javascript:;"><img src="../img/chengxinOne.png" alt=""></a>
-                        <a href="javascript:;"><img src="../img/chengxinOne.png" alt=""></a>
-                        <a href="javascript:;"><img src="../img/chengxinOne.png" alt=""></a>
-                        <a href="javascript:;"><img src="../img/chengxinOne.png" alt=""></a>
-                        <a href="javascript:;"><img src="../img/chengxinOne.png" alt=""></a>
-                        <a href="javascript:;"><img src="../img/chengxinOne.png" alt=""></a>
-                        <a href="javascript:;"><img src="../img/chengxinOne.png" alt=""></a>
-                        
-                    </ul>
+                        <a href="javascript:;"><img src="../img/buliang.png" alt=""></a>
+                        <a href="javascript:;"><img src="../img/wangluo.png" alt=""></a>
+                        <a href="javascript:;"><img src="../img/cata.png" alt=""></a>
+                        <a href="javascript:;"><img src="../img/lisi.png" alt=""></a>
+                        <a href="javascript:;"><img src="../img/3acomp.png" alt=""></a>
+                        <a href="javascript:;"><img src="../img/chengxin.png" alt=""></a>
+                        <a href="javascript:;"><img src="../img/pata.png" alt=""></a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="index_footer_sixthfloor">
+            <dl class="clear">
+                <dt>友情链接：</dt>
+                <dd>
+                    <ul>
+                        <li>
+                            <a href="javascript:;">笛风假期</a>
+                            <a href="javascript:;">途牛微博客</a>
+                            <a href="javascript:;">首都航空</a>
+                            <a href="javascript:;">网易旅游</a>
+                            <a href="javascript:;">中国经济网旅游</a>
+                            <a href="javascript:;">百度旅游</a>
+                            <a href="javascript:;">人民网旅游</a>
+                            <a href="javascript:;">中国制造网</a>
+                            <a href="javascript:;">成都青年旅行社</a>
+                            <a href="javascript:;">欣欣旅游网</a>
+                            <a href="javascript:;">驴妈妈旅游网</a>
+                            <a href="javascript:;">奇艺旅游</a>
+                            <a href="javascript:;">拉拉勾旅游网</a>
+                            <a href="javascript:;">米胖旅游网</a>
+                            <a href="javascript:;">百程旅行网</a>
+                            <a href="javascript:;">新疆旅游</a>
+                            <a href="javascript:;">wed114结婚网</a>
+                            <a href="javascript:;">二手车</a>
+                            <a href="javascript:;">中国签证资讯网</a>
+                            <a href="javascript:;">19楼</a>
+                            <a href="javascript:;">途家网</a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
         </div>
     </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
 
 

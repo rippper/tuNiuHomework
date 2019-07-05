@@ -261,7 +261,7 @@
                 <ul class="clear">
                     <li><a href="javascript:;">登录</a></li>
                     <li><a href="javascript:;">注册</a></li>
-                    <li><a href="javascript:;"><img class="register_img" src="../img/registerz.gif" alt=""></a></li>
+                    <li><a><img class="register_img" src="../img/registerz.gif" alt=""></a></li>
                 </ul>
             </div>
             <div class="index_top_rightpart clear">
