@@ -226,7 +226,7 @@
                         <router-link to="/common/guonei">境内跟团</router-link>
                         <router-link to="/common/zhoubian">周边跟团</router-link>
                         <a href="javascript:;">牛人专线</a>
-                        <router-link to="/common/mudi">目的地参团</router-link>
+                        <router-link to="/common/mudicantuan">目的地参团</router-link>
                         <a href="javascript:;">跟团自驾</a>
                         <router-link to="/common/banzizhu">半自助</router-link>
                     </div>

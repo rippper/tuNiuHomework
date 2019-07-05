@@ -321,6 +321,142 @@
 .index_banner_bannershow_firstfloor:hover .index_banner_background_rightbtn{
     opacity: 0.7;
 }
+.index_banner_last_floor{
+    width: 230px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1;
+    height: 420px;
+    background:#fff;
+    z-index: 4;
+}
+.index_banner_last_floor_title{
+    padding: 10px 0 3px 7px;
+    background: #fff;
+}
+.index_banner_last_floor_title_l{
+    width: 66px;
+    height: 65px;
+    float: left;
+    background: url(//ssl.tuniucdn.com/img/201601141600/index_v4/hot-icon.png) no-repeat;
+    background-position: 0 100px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-position: 1px -6440px;
+}
+.index_banner_last_floor_title_l_num{
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    top: 8px;
+    right: 24px;
+    color: #ff5805;
+    font-family: 'Arial';
+}
+.index_banner_last_floor_title_l_pec{
+    position: absolute;
+    top: 13px;
+    left: 43px;
+    color: #ffce5a;
+    font-size: 14px;
+}
+.index_banner_last_floor_title_l_txt{
+    display: block;
+    font-size: 12px;
+    position: absolute;
+    top: 35px;
+    left: 17px;
+    color: #ff5905;
+}
+.index_banner_last_floor_title_shu{
+    margin-top: 10px!important;
+    float: left;
+    font-size: 12px;
+    color: #999;
+    margin-left: 10px;
+    margin-top: 1px;
+    height: 22px;
+    line-height: 22px;
+    font-family: "宋体";
+}
+.index_banner_last_floor_title_dianpin{
+    float: left;
+    font-size: 12px;
+    color: #999;
+    margin-left: 10px;
+    margin-top: 1px;
+    height: 22px;
+    line-height: 22px;
+    font-family: "宋体";
+}
+.index_banner_font_bold{
+    font-weight: bold;
+}
+.index_banner_last_floor_middle img{
+    width:230px;
+}
+.index_banner_last_floor_span{
+    width: 100%;
+    height: 10px;
+    background: url(//ssl1.tuniucdn.com/img/2016052614/index_v4/index_icon.png) 0 -192px;
+}
+.index_banner_last_floor_span span{
+    display: block;
+    width: 58px;
+    height: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+    color: #a9a9a9;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    position: relative;
+    top: -5px;
+}
+.index_banner_last_floor_bottom{
+    height: 127px;
+    margin: 0px 12px 0;
+}
+.index_banner_last_floor_left{
+    width: 99px;
+    border-right: 1px dotted #ddd;
+    height: 127px;
+    float: left;
+}
+.index_banner_last_floor_right{
+    width: 99px;
+    height: 127px;
+    float: right;
+}
+.index_banner_last_floor_left_ex{
+    display: block;
+    float: left;
+    width: 96px;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 8px;
+    text-align: center;
+    float: left;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.index_banner_last_floor_left_ex img{
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-right: 7px;
+    position: relative;
+}
+.index_banner_last_floor_left_ex span{
+    font-size: 12px;
+    color: #656565;
+    font-family: "microsoft yahei";
+    float: left;
+}
 </style>
 
 <template>
@@ -561,7 +697,71 @@
                             </ul>
                         </div>
                     </div>
-
+                    <div class="index_banner_last_floor">
+                        <div class="index_banner_last_floor_title clear">
+                            <div class="index_banner_last_floor_title_l">
+                                <span class="index_banner_last_floor_title_l_num">93</span>
+                                <span class="index_banner_last_floor_title_l_pec">%</span>
+                                <span class="index_banner_last_floor_title_l_txt">满意度</span>
+                            </div>
+                            <p class="index_banner_last_floor_title_shu">
+                                出游人数：<span class="index_banner_font_bold">117200000+</span>
+                            </p>
+                            <p class="index_banner_last_floor_title_dianpin">
+                                点评人数：<span class="index_banner_font_bold">6200000+</span>
+                            </p>
+                        </div>
+                        <div class="index_banner_last_floor_top">
+                            <div>
+                                <img src="../img/jietuaaa.png" alt="">
+                            </div>
+                        </div>
+                        <div class="index_banner_last_floor_middle">
+                            <div>
+                                <img src="../img/sun.png" alt="">
+                            </div>
+                        </div>
+                        <div class="index_banner_last_floor_middle">
+                            <div>
+                                <a href="javascript:;">
+                                    <img src="../img/waijiaobu.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="index_banner_last_floor_span">
+                            <span>出游服务</span>
+                        </div>
+                        <div class="index_banner_last_floor_bottom">
+                            <div class="index_banner_last_floor_left">
+                                <a href="javascript:;" class="index_banner_last_floor_left_ex">
+                                    <img src="../img/book.png" alt="">
+                                    <span>签证</span>
+                                </a>
+                                <a href="javascript:;" class="index_banner_last_floor_left_ex">
+                                    <img src="../img/wifi.png" alt="">
+                                    <span>全球WIFI</span>
+                                </a>
+                                <a href="javascript:;" class="index_banner_last_floor_left_ex">
+                                    <img src="../img/bag.png" alt="">
+                                    <span>全球购</span>
+                                </a>
+                            </div>
+                            <div class="index_banner_last_floor_right">
+                                <a href="javascript:;" class="index_banner_last_floor_left_ex">
+                                    <img src="../img/local.png" alt="">
+                                    <span>当地玩乐</span>
+                                </a>
+                                <a href="javascript:;" class="index_banner_last_floor_left_ex">
+                                    <img src="../img/car.png" alt="">
+                                    <span>租车用车</span>
+                                </a>
+                                <a href="javascript:;" class="index_banner_last_floor_left_ex">
+                                    <img src="../img/ceamre.png" alt="">
+                                    <span>婚纱旅拍</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
