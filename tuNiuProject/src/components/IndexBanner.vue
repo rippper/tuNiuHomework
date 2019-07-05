@@ -782,6 +782,8 @@ export default {
             let rUl = title.getElementsByTagName("ul")[0];
             let rLi = rUl.getElementsByTagName("li"); 
                 rLi = Array.prototype.slice.call(rLi,0);
+            let timers = null;
+            let screen = document.getElementsByClassName("index_banner_bannershow_firstfloor")[0];
             
             function bannerTo(preindex,currentindex){
                 if(currentindex>5){
@@ -817,6 +819,21 @@ export default {
                     bannerTo(index,yindex);
                 })
             });
+            
+            clearInterval(timers);
+            timers = setInterval(()=>{
+                bannerTo(index,index+1);
+            },3000);
+            
+            screen.addEventListener("mouseenter",()=>{
+                clearInterval(timers);
+            })
+
+            screen.addEventListener("mouseleave",()=>{
+                timers = setInterval(()=>{
+                    bannerTo(index,index+1);
+                },3000);
+            })
 
             
         })

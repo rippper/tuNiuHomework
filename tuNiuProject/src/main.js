@@ -12,7 +12,7 @@ import Common from "./content/Common.vue";
 
 import Bbb from "./content/Bbb.vue";
 
-import IndexName from "./content/IndexName.vue";
+import Index from "./content/Index.vue";
 import HAT from "./content/HotelAndScenery.vue";
 import LocalPlay from "./content/LocalPlay.vue";
 import WiFi from "./content/Wifi.vue"
@@ -28,12 +28,12 @@ Vue.use(vClickOutside);
 
 const routes = [
     {
-        path: '/', redirect:"/common/indexname",
+        path: '/', redirect:"/common/index",
     },
     {
         path: '/common', component: Common,
         children: [
-            { path: 'indexname', component: IndexName},
+            { path: 'index', component: Index},
             { path: 'hotel', component: HAT },  
             { path: 'play', component: LocalPlay },
             { path: 'wifi',component: WiFi},

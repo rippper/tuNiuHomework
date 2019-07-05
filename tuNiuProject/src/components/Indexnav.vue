@@ -214,11 +214,7 @@
     <div class="index_nav">
         <div class="index_nav_center">
             <ul class="clear">
-<<<<<<< HEAD
-                <li><router-link to="/common/indexname">首页</router-link></li>
-=======
                 <li><router-link to="/common/index">首页</router-link></li>
->>>>>>> 505e4885b0fb5d9b47e26657dcbf514856b4883a
                 <li class="index_nav_ps" @mouseenter="mouseinn(0)" @mouseleave="mouseoutt(0)">
                     <a href="javascript:;">跟团游</a>
                     <div class="head_nav_soncenter head_nav_group">
