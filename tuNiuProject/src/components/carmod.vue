@@ -2,7 +2,7 @@
 body{
       background-color: #f6f6f6;
 }
-.modtitle {
+.class-modtitle {
  
   font-size: 30px;
   color: #000;
@@ -10,17 +10,17 @@ body{
   font-family: Yahei;
  
 }
-.modfu {
+.class-modfu {
   width: 1190px;
   height: 600px;
   margin: 0 auto;
 }
-.lunch {
+.class-lunch {
   width: 1190px;
   height: 508px;
   margin: 0 auto;
 }
-.modhead {
+.class-modhead {
   width: 1190px;
   height: 15px;
   margin: 0 auto;
@@ -30,7 +30,7 @@ body{
   line-height: 20px;
   zoom: 1;
 }
-.head-title {
+.class-head-title {
   float: left;
   margin-right: 50px;
   font-size: 20px;
@@ -39,10 +39,10 @@ body{
 a {
   font-family: Yahei;
 }
-.head-tab {
+.class-head-tab {
   float: left;
 }
-.head-tab a {
+.class-head-tab a {
   padding: 0 2px 9px;
   margin-right: 35px;
   cursor: pointer;
@@ -55,19 +55,19 @@ a {
   color: #22c233;
   border-bottom: 3px solid #22c233;
 }
-.head-body {
+.class-head-body {
   width: 1190px;
   height: 460px;
   margin: 0 auto;
 }
-.tabcnt {
+.class-tabcnt {
   width: 1190px;
   height: 460px;
   overflow: hidden;
   zoom: 1;
   margin-left: 10px;
 }
-.tabcnt li {
+.class-tabcnt li {
   width: 285px;
   height: 216px;
   background: white;
@@ -75,7 +75,7 @@ a {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.boolshit {
+.class-boolshit {
   display: block;
   width: 200px;
   height: 140px;
@@ -84,7 +84,7 @@ a {
 li > a {
   margin: 0;
 }
-.carprice {
+.class-carprice {
   width: 54px;
   height: 24px;
   float: left;
@@ -92,7 +92,7 @@ li > a {
   font-size: 12px;
 }
 
-.detail {
+.class-detail {
   text-align: right;
   color: #999;
   line-height: 24px;
@@ -100,21 +100,21 @@ li > a {
 }
 </style>
 <template>
-  <div class="modfu">
-    <div class="modtitle">全国租车精选</div>
-    <div class="lunch" v-for="(item,index) in list" :key="index">
-      <div class="modhead">
-        <div class="head-title" >限时优惠</div>
-        <div class="head-tab" v-for="(it,index) in tablist" :key="index" >
+  <div class="class-modfu">
+    <div class="class-modtitle">全国租车精选</div>
+    <div class="class-lunch" v-for="(item,index) in list" :key="index">
+      <div class="class-modhead">
+        <div class="class-head-title" >限时优惠</div>
+        <div class="class-head-tab" v-for="(it,index) in tablist" :key="index" >
           <a @click="live(index)" :class="{ok:index==nowIndex}">{{it}}</a>
         </div>
         <!-- v-text-->
       </div>
-      <div class="head-body">
-        <ul class="tabcnt">
+      <div class="class-head-body">
+        <ul class="class-tabcnt">
           <li v-for="(it,index) in item.itemlist" :key="index">
             <a>
-              <img  :src="it.src" alt class="boolshit" />
+              <img  :src="it.src" alt class="class-boolshit" />
             <span style="font-size:18px;color:#333333" >{{it.name}}
               <br> 
            <a style="font-size:14px">自动挡</a>

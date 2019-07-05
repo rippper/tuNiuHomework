@@ -55,7 +55,7 @@
 }
 .index-left {
   width: 200px;
-  height: 490px;
+ 
   float: left;
   background-repeat: no-repeat;
   background-position: -20px center;

@@ -4,7 +4,7 @@
     }
     body{
         font-size: 12px;
-        height:5000px;
+        
     }
     .clear::after{
         content:"";

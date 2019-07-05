@@ -212,13 +212,13 @@
                 <li class="index_nav_ps" @mouseenter="mouseinn(0)" @mouseleave="mouseoutt(0)">
                     <a href="javascript:;">跟团游</a>
                     <div class="head_nav_soncenter head_nav_group">
-                        <a href="javascirpt:;">出境·港澳台跟团</a>
+                        <a href="javascript:;">出境·港澳台跟团</a>
                         <a href="javascript:;">境内跟团</a>
                         <a href="javascript:;">周边跟团</a>
                         <a href="javascript:;">牛人专线</a>
                         <a href="javascript:;">目的地参团</a>
                         <a href="javascript:;">跟团自驾</a>
-                        <a href="javascript:;">半自动</a>
+                        <a href="javascript:;">半自助</a>
                     </div>
                 </li>
                 <li class="index_nav_ps" @mouseenter="mouseinn(1)" @mouseleave="mouseoutt(1)">
@@ -249,7 +249,7 @@
                 </li>
                 <li>
                     <div class="index_nav_bind_hotel"><img src="../img/bindzijiaz.png" alt=""></div>
-                    <router-link to="/hotel">酒+景</router-link>
+                    <router-link to="/common/hotel">酒+景</router-link>
                 </li>
                 <li class="index_nav_ps" @mouseenter="mouseinn(3)" @mouseleave="mouseoutt(3)">
                     <a href="javascript:;">机票</a>
@@ -269,7 +269,7 @@
                 </li>
                 <li><a href="javascript:;">火车票</a></li>
                 <li><a href="javascript:;">汽车票</a></li>
-                <li><a href="javascript:;">用车</a></li>
+                <li><router-link to="/common/usercar"><a  style="color:white">用车</a></router-link></li>
                 <li>
                     <div class="index_nav_bind_ticket"><img src="../img/bindDisneyz.png" alt=""></div>
                     <a href="javascript:;">门票</a>
@@ -292,8 +292,8 @@
                     <a href="javascript:;">出游服务</a>
                     <div class="head_nav_soncenter head_nav_service">
                         <a href="javascirpt:;">签证</a>
-                        <router-link to="/play">当地玩乐</router-link>
-                        <router-link to="/wifi">全球WiFi</router-link>
+                        <router-link to="/common/play">当地玩乐</router-link>
+                        <router-link to="/common/wifi">全球WiFi</router-link>
                         <a href="javascript:;">租车用车</a>
                         <a href="javascript:;">婚纱旅拍</a>
                         <a href="javascript:;">全球购</a>

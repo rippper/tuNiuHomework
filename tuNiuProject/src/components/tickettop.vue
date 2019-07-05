@@ -1,5 +1,5 @@
 <style>
-.banner {
+.class-banner {
   width: 1190px;
   height: 428px;
   margin: 0 auto;
@@ -13,12 +13,7 @@
 
   display: block;
 }
-h2 {
-  
-  height: 30px;
-  font-size: 20px;
-  line-height: 40px;
-}
+ 
 .more {
   color: #999999;
   height: 30px;
@@ -36,25 +31,25 @@ h2 {
   float: left;
 }
 
-.left {
+.class-left {
   width: 191px;
   height: 365px;
   color: white;
   margin-top: 19px;
   float: left;
 }
-.zuo {
+.class-zuo {
   width: 95px;
   height: 365px;
   float: left;
   border-right: 1px dashed #666;
 }
-.you {
+.class-you {
   width: 95px;
   height: 365px;
   float: left;
 }
-.show {
+.class-show {
   width: 95px;
   height: 95px;
   color: white;
@@ -62,13 +57,13 @@ h2 {
   font-size: 16px;
   cursor: pointer;
 }
-.show a {
+.class-show a {
   box-sizing: border-box;
   text-align: center;
   display: block;
   padding-top: 35px;
 }
-.life {
+.class-life {
   width: 95px;
   height: 135px;
   background: #0fa8a9;
@@ -78,12 +73,12 @@ h2 {
   border-bottom: 1px dashed #666;
   cursor: pointer;
 }
-.life a {
+.class-life a {
   line-height: 135px;
   text-align: center;
   display: block;
 }
-.bai {
+.class-bai {
   width: 95px;
   height: 135px;
   background: #50c389;
@@ -91,12 +86,12 @@ h2 {
   font-size: 16px;
   cursor: pointer;
 }
-.bai a {
+.class-bai a {
   line-height: 135px;
   text-align: center;
   display: block;
 }
-.happy {
+.class-happy {
   width: 95px;
   height: 135px;
   background: #50c389;
@@ -104,13 +99,13 @@ h2 {
   font-size: 16px;
   cursor: pointer;
 }
-.happy a {
+.class-happy a {
   line-height: 135px;
   text-align: center;
   display: block;
 }
 
-.nike {
+.class-nike {
   width: 95px;
   height: 135px;
   background: #24adc6;
@@ -120,12 +115,12 @@ h2 {
   border-bottom: 1px dashed #666;
   cursor: pointer;
 }
-.nike a {
+.class-nike a {
   line-height: 135px;
   text-align: center;
   display: block;
 }
-.check {
+.class-check {
   width: 95px;
   height: 95px;
   color: white;
@@ -134,7 +129,7 @@ h2 {
   background: url(http://img2.tuniucdn.com/img/20150115/entryticket/readmore-bg.png);
   background-position: -30px -85px;
 }
-.check a {
+.class-check a {
   font-size: 12px;
   width: 95px;
   height: 12px;
@@ -142,7 +137,7 @@ h2 {
   text-align: center;
   display: block;
 }
-.check img {
+.class-check img {
   width: 50%;
   height: 50%;
   position: relative;
@@ -174,13 +169,90 @@ div.bai:hover {
   font-family: 宋体;
   cursor: pointer;
 }
+.light{
+    background: #07AFAB;
+    color: white;
+}
+.class-right{
+    width: 991px;
+    height: 380px;
+    float: right;
+    margin-top: 19px;
+}
+.class-item{
+    width: 190px;
+    height: 177px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px #ddd;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 9px;
+}
+.play-water{
+    width: 188px;
+    height:110px;
+    overflow: hidden;
+
+}
+
+.class-font{
+    width: 188px;
+    height: 23px;
+    position: relative;
+    top: -27px;
+    left: 0;
+
+}
+.bog{
+    position: relative;
+    top: 0;
+    left: 0;
+    color:black;        /*#CCCCCC*/
+    font-size: 12px;
+    font-family: 宋体;
+margin-right: 35px;
+margin-left: 10px;
+
+}
+.class-big{
+    position: relative;
+    top: 0;
+    left: 0;
+    color:black;        /*#CCCCCC*/
+    font-size: 12px;
+    font-family: 宋体;
+margin-right: 35px;
+margin-left: 10px; 
+}
+.sanya{
+    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #404040;
+    font-size: 16px;
+    font-family: Microsoft Yahei,宋体;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.pricey{
+color: #FF6600;
+font-size: 16px;
+    font-family: Microsoft Yahei,宋体;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+li{
+    list-style: none;
+}
 </style>
 
 <template>
   <div class="app">
-    <div class="banner">
+    <div class="class-banner">
       <div class="niceplace">
-        <h2 class="nicep">身边景点</h2>
+        <h2 class="nicep" style="height: 30px;
+  font-size: 20px;
+  line-height: 20px;">身边景点</h2>
         <div class="nicetitle">
           <ul>
             <li
@@ -193,35 +265,36 @@ div.bai:hover {
         </div>
         <a class="more">更多景点></a>
       </div>
-      <div class="left">
-        <div class="zuo" v-for="(it,ind) in blockList " :key="ind">
-          <div class="show">
+      <div class="class-left">
+        <div class="class-zuo" v-for="(it,ind) in blockList " :key="ind">
+          <div class="class-show">
             <a class="block" v-for="(it,index) in blockList" :key="index" v-text="it.content"></a>
           </div>
-          <div class="life">
+          <div class="class-life">
             <a class="block" v-for="(it,index) in blockList" :key="index" v-text="it.happy"></a>
           </div>
-          <div class="bai">
+          <div class="class-bai">
             <a class="block" v-for="(it,index) in blockList" :key="index" v-text="it.show"></a>
           </div>
         </div>
-        <div class="you">
-          <div class="happy">
+        <div class="class-you">
+          <div class="class-happy">
             <a class="block" v-for="(it,index) in blockList" :key="index" v-text="it.life"></a>
           </div>
-          <div class="nike">
+          <div class="class-nike">
             <a class="block" v-for="(it,index) in blockList" :key="index" v-text="it.bai"></a>
           </div>
-          <div class="check">
+          <div class="class-check">
             <img
               src="http://img2.tuniucdn.com/img/20150115/entryticket/icon-readmore.png"
               alt="查看更多"
+              style="width:100%;height:100%"
             >
             <a>查看更多</a>
           </div>
         </div>
       </div>
-      <div class="right" v-for="(item,index) in rightList" v-show="index==nowIndex" :key="index">
+      <div class="class-right" v-for="(item,index) in rightList" v-show="index==nowIndex" :key="index">
         <div
           class="class-item"
           v-for="(item,index) in classList"
@@ -229,10 +302,10 @@ div.bai:hover {
           :key="index"
         >
           <div class="play-water">
-            <img src="../img/1j.jpg">
-            <div class="font">
+            <img src="../img/1j.jpg" style="width:100%;height:100%">
+            <div class="class-font">
               <a class="bog" v-text="perfer" ></a>
-              <a class="big" v-text="people">1489人点评</a>
+              <a class="class-big" v-text="people">1489人点评</a>
             </div>
           </div>
           <p class="sanya" v-text="name" >三亚千古情</p>

@@ -100,18 +100,11 @@ body {
     text-align: center;
     color: #fff;
 }
-button{
-    cursor: pointer;
-        outline: none;
-            font-style: inherit;
-    font-weight: inherit;
-        border: 0 none;
 
-}
 </style>
 <template>
-  <div class="modbox">
-    <div class="modtitle">预订只需3分钟</div>
+  <div class="class-modbox">
+    <div class="class-modtitle">预订只需3分钟</div>
     <ul class="bookstep">
       <li>
         <div class="step1"></div>
@@ -153,7 +146,11 @@ button{
         </div>
       </li>
     </ul>
-    <button class="btnbook">立刻租车</button>
+    <button class="btnbook" style="cursor: pointer;
+        outline: none;
+            font-style: inherit;
+    font-weight: inherit;
+        border: 0 none;">立刻租车</button>
   </div>
 </template>
 <script>

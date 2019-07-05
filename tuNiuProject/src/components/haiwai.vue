@@ -55,7 +55,7 @@
       :key="index"
     >
       <div class="play-water">
-        <img src="../img/1j.jpg">
+        <img src="../img/1j.jpg" style="width:100%;height:100%">
         <div class="font">
           <a class="bog" v-text="perfer"></a>
           <a class="big" v-text="people">1489人点评</a>

@@ -5,7 +5,7 @@
   position: relative;
   margin: 0 auto;
 }
-.simplea {
+.class-simplea {
   box-shadow: 0 5px 10px 0 rgba(230, 68, 69, 0.5);
   color: #fff;
   width: 160px;
@@ -21,7 +21,7 @@
   bottom: 20px;
   font-family: 宋体;
 }
-.serverban {
+.class-serverban {
   width: 1903px;
   height: 1563px;
   margin: 0 auto;
@@ -32,7 +32,7 @@
   line-height: 1.5;
   text-align: center;
 }
-.titledown {
+.class-titledown {
   width: 532px;
   height: 10px;
   overflow: hidden;
@@ -40,36 +40,36 @@
   margin-top: -55px;
   margin-bottom: 90px;
 }
-.color1 {
+.class-color1 {
   background-color: #76ba2f;
   float: left;
   width: 25%;
   height: 10px;
 }
-.color2 {
+.class-color2 {
   background-color: #ca342d;
   float: left;
   width: 25%;
   height: 10px;
 }
-.color3 {
+.class-color3 {
   background-color: #409fab;
   float: left;
   width: 25%;
   height: 10px;
 }
-.color4 {
+.class-color4 {
   background-color: #e36c17;
   float: left;
   width: 25%;
   height: 10px;
 }
-.ctt1 {
+.class-ctt1 {
   margin: 70px auto 0 auto;
   width: 1200px;
   height: 100px;
 }
-.ctts {
+.class-ctts {
   width: 100px;
   height: 100px;
   font-size: 18px;
@@ -79,29 +79,29 @@
   text-align: center;
   float: left;
 }
-.ctts p {
+.class-ctts p {
   margin-top: 23px;
 }
-.wym {
+.class-wym {
   width: 1200px;
   height: 75%;
   margin: 0 auto;
 
   padding-top: 100px;
 }
-.wym1 {
+.class-wym1 {
   width: 1200px;
   height: 306px;
 }
-.wym2 {
+.class-wym2 {
   width: 1200px;
   height: 306px;
 }
-.wym3 {
+.class-wym3 {
   width: 1200px;
   height: 306px;
 }
-.wym4 {
+.class-wym4 {
   width: 1200px;
   height: 306px;
 }
@@ -127,25 +127,25 @@
     margin-top: 40px;
 
 }
-.simplebom{
+.class-simplebom{
     width: 950px;
-    height: 149px;
+    
     margin: 0 auto;
-    margin-bottom: 70px;
+   
 }
-.bom1{
+.class-bom1{
      width: 149px;
     height: 149px;
     float: left;
     margin-right: 60px;
 }
-.bom2{
+.class-bom2{
     width: 89px;
     height: 85px;
     float: left;
     margin-right: 30px;
 }
-.bom3{
+.class-bom3{
     width: 92px;
     height: 88px;
     float: left;
@@ -156,68 +156,68 @@
 
 <template>
   <div class="bnner-simple">
-    <div class="img-sp">
+    <div class="img-sp" style="width:100%;height:100%">
       <img src="http://img1.tuniucdn.com/img/2016/team_travel/banner_03.jpg" alt />
-      <a class="simplea">会议定制</a>
+      <a class="class-simplea">会议定制</a>
     </div>
-    <div class="serverban">
+    <div class="class-serverban">
       <div class="banner-ser">
         <a style="font-size:36px;font-family:Yahei;">服&nbsp;&nbsp;务&nbsp;&nbsp;内&nbsp;&nbsp;容</a>
       </div>
-      <div class="titledown">
-        <div class="color1"></div>
-        <div class="color2"></div>
-        <div class="color3"></div>
-        <div class="color4"></div>
+      <div class="class-titledown">
+        <div class="class-color1"></div>
+        <div class="class-color2"></div>
+        <div class="class-color3"></div>
+        <div class="class-color4"></div>
       </div>
-      <div class="ctt1">
-        <div class="ctts" style="margin-right: 118.8px;">
+      <div class="class-ctt1">
+        <div class="class-ctts" style="margin-right: 118.8px;">
           <img src="http://img1.tuniucdn.com/img/2016/team_travel/icon1.jpg" alt />
           <p>公司会议</p>
         </div>
-        <div class="ctts" style="margin-right: 118.8px;">
+        <div class="class-ctts" style="margin-right: 118.8px;">
           <img src="http://img1.tuniucdn.com/img/2016/team_travel/icon2.jpg" alt />
           <p>企业出游</p>
         </div>
-        <div class="ctts" style="margin-right: 118.8px;">
+        <div class="class-ctts" style="margin-right: 118.8px;">
           <img src="http://img1.tuniucdn.com/img/2016/team_travel/icon3.jpg" alt />
           <p>商务考察</p>
         </div>
-        <div class="ctts" style="margin-right: 118.8px;">
+        <div class="class-ctts" style="margin-right: 118.8px;">
           <img src="http://img1.tuniucdn.com/img/2016/team_travel/icon4.jpg" alt />
           <p>交流论坛</p>
         </div>
-        <div class="ctts" style="margin-right: 118.8px;">
+        <div class="class-ctts" style="margin-right: 118.8px;">
           <img src="http://img1.tuniucdn.com/img/2016/team_travel/icon5.jpg" alt />
           <p>培训扩展</p>
         </div>
-        <div class="ctts">
+        <div class="class-ctts">
           <img src="http://img1.tuniucdn.com/img/2016/team_travel/icon6.jpg" alt />
           <p>活动策划</p>
         </div>
       </div>
-      <div class="wym">
-        <div class="wym1">
+      <div class="class-wym">
+        <div class="class-wym1">
           <img src="http://img1.tuniucdn.com/img/2016/team_travel/center_02.png" alt />
         </div>
-        <div class="wym2">
+        <div class="class-wym2">
           <img src="http://img2.tuniucdn.com/img/2016/team_travel/center_03.png" alt />
         </div>
-        <div class="wym3">
+        <div class="class-wym3">
           <img src="http://img3.tuniucdn.com/img/2016/team_travel/center_04.png" alt />
         </div>
-        <div class="wym4">
+        <div class="class-wym4">
           <img src="http://img4.tuniucdn.com/img/2016/team_travel/center_05.png" alt />
         </div>
       </div>
       <div class="banner-ser">
         <a style="font-size:36px;font-family:Yahei;">服务流程</a>
       </div>
-      <div class="titledown">
-        <div class="color1"></div>
-        <div class="color2"></div>
-        <div class="color3"></div>
-        <div class="color4"></div>
+      <div class="class-titledown">
+        <div class="class-color1"></div>
+        <div class="class-color2"></div>
+        <div class="class-color3"></div>
+        <div class="class-color4"></div>
       </div>
       <div class="flow-content">
         <div class="flow-upper"></div>
@@ -232,23 +232,23 @@
           <div class="banner-ser">
         <a style="font-size:36px;font-family:Yahei;">联系方式</a>
       </div>
-      <div class="titledown">
-        <div class="color1"></div>
-        <div class="color2"></div>
-        <div class="color3"></div>
-        <div class="color4"></div>
+      <div class="class-titledown">
+        <div class="class-color1"></div>
+        <div class="class-color2"></div>
+        <div class="class-color3"></div>
+        <div class="class-color4"></div>
       </div>
-      <div class="simplebom">
-<div class="bom1">
+      <div class="class-simplebom">
+<div class="class-bom1">
     <img src="http://img2.tuniucdn.com/img/2016/team_travel/contract-1.png" alt="">
 </div>
-<div class="bom2">
+<div class="class-bom2">
 <img src="http://img4.tuniucdn.com/img/2016/team_travel/contract-3.png" alt="" style="margin-top:32px;">
 
 </div>
 <a style="font-size:18px;color:#404040;font-family:宋体;float:left;margin-top:50px;">联系电话</a><br>
 <a style="font-size:18px;color:#FEAF6B;font-weight:700;float:left;margin-top:60px;margin-left:-72px;">400-797-3050</a>
-<div class="bom3">
+<div class="class-bom3">
     <img src="http://img3.tuniucdn.com/img/2016/team_travel/contract-2.png" alt="">
 </div>
 <a style="font-size:18px;color:#404040;font-family:宋体;float:left;margin-top:25px;margin-left:11px">联系邮箱</a><br> 

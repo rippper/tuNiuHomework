@@ -23,10 +23,10 @@
 <template>
     <div class="gifttop">
         <div class="l-top">
-            <img src="../img/gift_logo.png" alt="">
+            <img src="../img/gift_logo.png" alt="" style="width:100%;height:100%">
         </div>
         <div class="r-top">
-            <img src="../img/weixin.png" alt="">
+            <img src="../img/weixin.png" alt="" style="width:100%;height:100%">
         </div>
 
 

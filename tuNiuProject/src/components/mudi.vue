@@ -57,7 +57,7 @@ margin: 0 auto;
     margin-left: 10px; 
     position: relative;
 }
-.clear{
+.class-clear{
     width: 390px;
     height: 32px;
     background: #333;
@@ -82,37 +82,37 @@ margin: 0 auto;
 <div class="dsn">
 <div class="top1">
 <img src="http://img2.tuniucdn.com/menpiao/gemeiling/shdsnmdd.jpg" alt="">
-<div class="clear">
+<div class="class-clear">
 <a>上海迪士尼</a>
 </div>
 </div>
 <div class="top1">
     <img src="https://m1.tuniucdn.com/fb2/t1/G5/M00/FA/95/Cii-s1z3JGyIXfFjAAFpbkOxSb4AAWjxwDZ6tsAAWmG79.jpeg" alt="">
-<div class="clear">
+<div class="class-clear">
 <a>圣亚海洋世界</a>
 </div>
 </div>
 <div class="top1">
     <img src="https://m.tuniucdn.com/fb2/t1/G3/M00/3C/2A/Cii_NllnbPWIaMuYAADDnNRdLOsAADifgPrcs8AAMO049.jpeg" alt="">
-<div class="clear">
+<div class="class-clear">
 <a>昂坪360</a>
 </div>
 </div>
 <div class="top2">
 <img src="https://m4.tuniucdn.com/fb2/t1/G5/M00/34/43/Cii-tF0HCKaIR3UkAADNgg19CfAAAW8YQP82JAAAM2a26.jpeg" alt="">
-<div class="clear">
+<div class="class-clear">
 <a>快乐暑假在长隆</a>
 </div>
 </div>
 <div class="top2">
     <img src="https://m4.tuniucdn.com/fb2/t1/G5/M00/53/C6/Cii-s10QcHKIBVL1AAFOMREhfS4AAXHAwICGSIAAU5J34.jpeg" alt="">
-<div class="clear">
+<div class="class-clear">
 <a>张家界千古情</a>
 </div>
 </div>
 <div class="top3">
     <img src="https://m.tuniucdn.com/fb2/t1/G5/M00/03/F9/Cii-tFyjFbuILxooAADtabyz1YUAAUz6gL5TZcAAO2B87.jpeg" alt="">
-<div class="clear">
+<div class="class-clear">
 <a>中国渔村</a>
 </div>
 </div>

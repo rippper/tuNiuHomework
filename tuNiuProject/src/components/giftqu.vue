@@ -3,6 +3,7 @@
   width: 1522px;
   height: 448px;
   margin: 0 auto;
+  margin-bottom: 300px;
 }
 .giquestion {
   width: 1065px;

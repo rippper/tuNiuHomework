@@ -2,13 +2,13 @@
 body{
 background: #f6f6f6;
 }
-.easycar {
+.class-easycar {
   width: 1215px;
   height: 200px;
   zoom: 1;
   margin: 0 auto;
 }
-.easycar li {
+.class-easycar li {
   float: left;
   width: 358px;
   height: 140px;
@@ -18,10 +18,10 @@ background: #f6f6f6;
   color: #666;
   overflow: hidden;
 }
-.carpic {
+.class-carpic {
   padding: 5px 0;
 }
-.carcunt {
+.class-carcunt {
   float: left;
   width: 140px;
   height: 140px;
@@ -32,11 +32,11 @@ background: #f6f6f6;
 </style>
 <template>
   <div class="modbox">
-    <div class="modtitle">一线租车公司</div>
-    <ul class="easycar">
+    <div class="class-modtitle">一线租车公司</div>
+    <ul class="class-easycar">
       <li v-for="(item,index) in carpiclist" :key="index">
-        <img :src="item.src" alt class="carcunt" />
-        <div class="carpic">
+        <img :src="item.src" alt class="class-carcunt" />
+        <div class="class-carpic">
           <a>{{item.cont}}</a>
         </div>
       </li>

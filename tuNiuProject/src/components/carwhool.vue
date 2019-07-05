@@ -49,7 +49,7 @@ body {
 </style>
 <template>
   <div class="whool-main">
-    <div class="modtitle">车轮下的中国</div>
+    <div class="class-modtitle">车轮下的中国</div>
     <div class="whool-mod">
       <div class="modbox-main" v-for="(item,index) in whoollist" :key="index">
         <div class="whimg">

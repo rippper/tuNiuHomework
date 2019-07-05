@@ -1,22 +1,12 @@
 <style>
-.bottom{
+.cl-bottom{
          width: 100%;
     height: auto;
     background: #eaeaea;
     padding-top: 30px;
     padding-bottom: 30px;
  }
- body{
-         font-size: 12px;
-    line-height: 1.5;
-    font-family: "Hiragino Sans GB",Tahoma,arial,宋体,sans-serif;
-    color: #404040;
-    text-align: left;
-    margin: 0 ;
-    width: 100%;
-    position: relative;
- }
-.classify {
+.cl-classify {
     width: 1190px;
     height: 36px;
     border-bottom: 1px solid #d4d4d4;
@@ -25,16 +15,16 @@
     margin: 10px auto;
     
 }
-.classify span{
+.cl-classify span{
     line-height: 32px;
 }
-.maintitle{
+.cl-maintitle{
     width: 1190px;
     height: auto;
     margin: 5px auto;
     
 }
-.maintitle a{
+.cl-maintitle a{
     margin-right: 13px;
     margin-top: 5px;
     
@@ -44,23 +34,23 @@
 
 </style>
 <template>
- <div class="bottom">
-<div class="classify">
+ <div class="cl-bottom">
+<div class="cl-classify">
     <span>所有门票主题分类</span>
 </div>
-<div class="maintitle">
+<div class="cl-maintitle">
 <a  v-for="(item,index) in ifyList" :key="index" v-text="item.fuc"></a>
 </div>
-<div class="classify">
+<div class="cl-classify">
 <span>热门省(直辖市)门票</span>
 </div>
-<div class="maintitle">
+<div class="cl-maintitle">
 <a v-for="(item,index) in snList" :key="index" v-text="item.fun"></a>
 </div>
-<div class="classify">
+<div class="cl-classify">
 <span>热门城市门票</span>
 </div>
-<div class="maintitle">
+<div class="cl-maintitle">
 <a  v-for="(item,index) in csList" :key="index" v-text="item.fug"></a>
 </div>
 
