@@ -3,7 +3,7 @@
 </style>
 
 <template>
-    <div>
+    <div class="index_page">
         <IndexBanner></IndexBanner> 
     </div>
 </template>

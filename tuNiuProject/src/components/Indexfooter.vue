@@ -1,4 +1,8 @@
 <style>
+.index_footer{
+    width:100%;
+    min-width:1190px;
+}
 .index_footer_firstfloor{
     background: #f5f5f5;
     padding: 20px 0 20px 0;

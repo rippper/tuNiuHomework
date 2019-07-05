@@ -1,16 +1,21 @@
 <style>
 .index_nav{
+    width:100%;
     background:#2dbb55;
     position: relative;
+    min-width: 1190px;
+    z-index: 9;
 }
 .index_nav_center{
     width:1190px;
     margin:0 auto;
+    position: relative;
+    z-index:11;
 }
 .index_nav_center ul li{
     float:left;
     position: relative;
-    z-index: 2;
+    z-index: 12;
 }
 .index_nav_center ul li:hover{
     background:#4ecf5b;
@@ -59,7 +64,7 @@
     color:#666;
     background:#fff;
     display:none;
-    z-index: 1;
+    z-index: 8;
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
 }
 .head_nav_soncenter{
@@ -68,6 +73,7 @@
     top:40px;
     height:40px;
     left:-53px;
+    z-index: 5;
 }
 .head_nav_soncenter{
     display: none;

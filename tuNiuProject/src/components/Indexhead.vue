@@ -25,7 +25,7 @@
     top:28px;
     right:14px;
     border:1px solid #fff;
-    z-index:9;
+    z-index:12;
 }
 .head_logo_address_bit:hover{
     background:#fff;
